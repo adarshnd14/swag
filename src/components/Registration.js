@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Registration.css';
 // import './'
-;
-
-
 
 function Registration(props) {
   const [userDetails, setuserDetails] = useState({
