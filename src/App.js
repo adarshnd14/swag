@@ -9,8 +9,6 @@ import { TableDataProvider } from './context/TableData';
 import { useState } from 'react';
 import Edit from './components/Edit';
 
-
-
 import Registration from './components/Registration';
 
 function App() {
