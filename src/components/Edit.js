@@ -21,31 +21,7 @@ function Edit(props) {
         setForm(props.selectedDetails)
     }, [props.selectedDetails])
 
-    // const handleChange = (event) => {
-    //     const FormdetailsCopy= { ...Formdetails }
-    //     FormdetailsCopy[event.target.name] = event.target.value
-    //     setForm(FormdetailsCopy)
-    // }
-
-    // const editForm = async () => {
-    //     let url = ''
-    //     const editUrl = ``
-    //     try {
-    //         if (props.modalType === 'edit') {
-    //             url = editUrl
-    //             const response = await.put(url,Formdetails)
-    //             console.log(response.data);
-    //             if (response.data.error === false) {
-    //                 handleClose()
-    //                 props.fetchFormdetails()
-    //             } else {
-    //                 alert(response.data.message)
-    //             }
-    //         }
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    // }
+   
   return <div> 
       <>
         <Button variant="primary" onClick={handleShow}>
@@ -65,7 +41,7 @@ function Edit(props) {
                 //  value={Formdetails.fullname}
                 //                     onChange={(event) => { handleChange(event) }}
                 //                     className="form-control" 
-                placeholder="test"
+                // placeholder="test"
                  />
             </div>
             </div>
@@ -75,7 +51,7 @@ function Edit(props) {
                 //  value={Formdetails.designation}
                 //         onChange={(event) => { handleChange(event) }}
                 //                     className="form-control" 
-                placeholder="qwerty"
+                // placeholder="qwerty"
                  />
              </div>
             <div className="col">
@@ -84,7 +60,7 @@ function Edit(props) {
                     //   value={Formdetails.salary}
                     //      onChange={(event) => { handleChange(event) }}
                     //                 className="form-control" 
-                    placeholder="12345"
+                    // placeholder="12345"
                  />
             </div>
             <div className="col">
@@ -93,7 +69,7 @@ function Edit(props) {
                     //  value={Formdetails.age}
                     //      onChange={(event) => { handleChange(event) }}
                     //                 className="form-control"
-                     placeholder="20"
+                    //  placeholder="20"
                 />
             </div>
            </div>

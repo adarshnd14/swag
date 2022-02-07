@@ -5,13 +5,13 @@ import Registration from './components/Registration';
 import Login from './components/Login';
 import Add from './components/Add';
 import EmpDisplay from './components/EmpDisplay';
-import { TableDataProvider } from './context/TableData';
 import { useState } from 'react';
 import Edit from './components/Edit';
+import { TableDataProvider } from './components/TableData';
 
 
 
-import Registration from './components/Registration';
+// import Registration from './components/Registration';
 
 function App() {
   const [detailForTable, setdetailForTable] = useState([]);
@@ -43,7 +43,6 @@ function App() {
         </TableDataProvider>
       </div>
 
-      <Registration/>
 
     </div>
   </Router>
