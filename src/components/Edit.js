@@ -21,31 +21,7 @@ function Edit(props) {
         setForm(props.selectedDetails)
     }, [props.selectedDetails])
 
-    // const handleChange = (event) => {
-    //     const FormdetailsCopy= { ...Formdetails }
-    //     FormdetailsCopy[event.target.name] = event.target.value
-    //     setForm(FormdetailsCopy)
-    // }
-
-    // const editForm = async () => {
-    //     let url = ''
-    //     const editUrl = ``
-    //     try {
-    //         if (props.modalType === 'edit') {
-    //             url = editUrl
-    //             const response = await.put(url,Formdetails)
-    //             console.log(response.data);
-    //             if (response.data.error === false) {
-    //                 handleClose()
-    //                 props.fetchFormdetails()
-    //             } else {
-    //                 alert(response.data.message)
-    //             }
-    //         }
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    // }
+   
   return <div> 
       <>
         <Button variant="primary" onClick={handleShow}>
@@ -57,46 +33,39 @@ function Edit(props) {
           {/* closeButton */}
             <Modal.Title>Edit Employee</Modal.Title>
           </Modal.Header>
-          <Modal.Body><div>
-          <div className="row">
-            <div className="col">
-                 <p>Full Name</p>
-                 <input type="text" name="fullname"
-                //  value={Formdetails.fullname}
-                //                     onChange={(event) => { handleChange(event) }}
-                //                     className="form-control" 
-                placeholder="test"
-                 />
+          <Modal.Body>
+          <div className='card'>
+           
+            <div className='container mt-2 mb-5 m-lg-2 '>
+              <form>
+                <div className="form-row ">
+                  <div className="form-group col-md-13">
+                    <label htmlFor="inputEmail4">Full Name</label>
+                    <input type="text" className="form-control"  name='fullname' />
+                  </div>
+                  <div className="form-group col-md-13">
+                    <label htmlFor="inputPassword4">Designation</label>
+                    <input type="text" className="form-control" name='designation' />
+                  </div>
+                </div>
+
+
+                <div className="form-row">
+
+                  <div className="form-group col-md-13">
+                    <label htmlFor="inputZip">Salary</label>
+                    <input type="number" className="form-control" name='salary' />
+                  </div>
+                  <div className="form-group col-md-13">
+                    <label htmlFor="inputZip">Age</label>
+                    <input type="number" className="form-control" name='age' />
+                  </div>
+                </div>
+
+                {/* <button type="submit" className="btn btn-primary mt-3 mb-2 btn1" onClick={getAddDetails}>Submit</button> */}
+              </form>
             </div>
-            </div>
-            <div className="col">
-                <p>Designation</p>
-                 <input type="text" name="designation"
-                //  value={Formdetails.designation}
-                //         onChange={(event) => { handleChange(event) }}
-                //                     className="form-control" 
-                placeholder="qwerty"
-                 />
-             </div>
-            <div className="col">
-                <p>Salary</p>
-                 <input type="text"  name="salary"
-                    //   value={Formdetails.salary}
-                    //      onChange={(event) => { handleChange(event) }}
-                    //                 className="form-control" 
-                    placeholder="12345"
-                 />
-            </div>
-            <div className="col">
-                <p>Age</p>
-                <input type="text" name="age"
-                    //  value={Formdetails.age}
-                    //      onChange={(event) => { handleChange(event) }}
-                    //                 className="form-control"
-                     placeholder="20"
-                />
-            </div>
-           </div>
+          </div>
         
         </Modal.Body>
           <Modal.Footer>

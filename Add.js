@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import TableData from './TableData';
+import TableData from '../context/TableData';
 import EmpDisplay from './EmpDisplay';
 
 function Add(props) {
@@ -36,13 +36,12 @@ function Add(props) {
   }
   // console.log(detailForTable);
   return <div>
-    <div className='container add mt-2'>
+    <div className='container add'>
       <div className='row'>
         <div className='col-md-5  offset-4'>
           <div className='card'>
             <div className='heading'>
-              <h1 className='text-center
-              '>Add Employee</h1>
+              <h1>Add Employee</h1>
             </div>
             <div className='container mt-2 mb-5 m-lg-2 '>
               <form>
