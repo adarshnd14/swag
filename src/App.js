@@ -9,9 +9,12 @@ import { useState } from 'react';
 import Edit from './components/Edit';
 import { TableDataProvider } from './components/TableData';
 
+import Registration from './components/Registration';
+
 
 
 // import Registration from './components/Registration';
+
 
 function App() {
   const [detailForTable, setdetailForTable] = useState([]);
