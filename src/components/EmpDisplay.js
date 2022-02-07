@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Modal } from 'react-bootstrap';
-import TableData from '../context/TableData';
+import TableData from './TableData';
 import Edit from './Edit';
 
 
@@ -23,7 +23,7 @@ function EmpDisplay() {
     copyOfsetdetailForTableinTable(copydetailForTable)
   }
   return <div>
-    <table class="table table-dark">
+    <table className="table table-dark">
       <thead>
         <tr>
           <th scope="col">#</th>
