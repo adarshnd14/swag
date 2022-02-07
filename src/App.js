@@ -43,7 +43,6 @@ function App() {
         </TableDataProvider>
       </div>
 
-
     </div>
   </Router>
   );
