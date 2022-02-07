@@ -7,7 +7,10 @@ function Add(props) {
   const appTableDetail = useContext(TableData)
   const copyOfdetailForTable = appTableDetail.detailForTable
   const copyOfsetdetailForTable = appTableDetail.setdetailForTable
- 
+  
+
+// console.log(copyOfdetailForTable);
+  // const [detailForTable, setdetailForTable] = useState([]);
   const [addDetails, setaddDetails] = useState({
     fullname: '',
     designation: '',
@@ -29,7 +32,6 @@ function Add(props) {
     copydetailForTable.push(addDetails)
     copyOfsetdetailForTable(copydetailForTable)
     // console.log(copydetailForTable);
-    
     props.history.push("/empDisplay")
   }
   // console.log(detailForTable);
