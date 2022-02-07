@@ -43,8 +43,6 @@ function App() {
         </TableDataProvider>
       </div>
 
-      <Registration/>
-
     </div>
   </Router>
   );
