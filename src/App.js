@@ -11,12 +11,15 @@ import Edit from './components/Edit';
 
 
 
+import Registration from './components/Registration';
+
 function App() {
   const [detailForTable, setdetailForTable] = useState([]);
 
   const [eshow, seteshow] = useState(false);
   return (<Router>
     <div className="App">
+
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
@@ -39,6 +42,9 @@ function App() {
           <Route path='/empDisplay' component={EmpDisplay} />
         </TableDataProvider>
       </div>
+
+      <Registration/>
+
     </div>
   </Router>
   );
